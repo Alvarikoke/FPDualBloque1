@@ -1,0 +1,83 @@
+/* Eliminamos margenes */
+* {
+  margin: 0;
+}
+
+/* Estilos del Header */
+header {
+  margin-bottom: 20px;
+}
+
+nav {
+  height: 6vh;
+  width: 100vw;
+  background-color: cadetblue;
+  padding-top: 3vh;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 0.8rem;
+}
+
+/* Estilos del Main */
+main {
+  padding: 1rem;
+  background-color: lightblue;
+}
+
+aside {
+  width: 25vw;
+  display: block;
+  float: right;
+  margin-left: 20px;
+  background-color: bisque;
+}
+
+article {
+  width: 50vw;
+  margin-bottom: 20px;
+}
+
+#seccionUno {
+  background-color: coral;
+}
+
+#seccionDos {
+  background-color: deeppink;
+}
+
+#seccionTres {
+  background-color: gray;
+}
+
+aside p,
+section p {
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/* Estilos del Footer */
+footer {
+  height: 10vh;
+  width: 100vw;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 5vh;
+  background-color: blueviolet;
+  color: white;
+}
