@@ -3,15 +3,27 @@
   margin: 0;
 }
 
-/* Estilos del Header */
-header {
-  margin-bottom: 20px;
+.color1 {
+  color: #20dad9;
+}
+.color2 {
+  color: #43dec3;
+}
+.color3 {
+  color: #5c0907;
+}
+.color4 {
+  color: #7f3007;
+}
+.color5 {
+  color: #987d1d;
 }
 
+/* Estilos del Header */
 nav {
   height: 6vh;
   width: 100vw;
-  background-color: cadetblue;
+  background-color: #5c0907;
   padding-top: 3vh;
 }
 
@@ -25,15 +37,15 @@ li {
 }
 
 li a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   padding: 0 0.8rem;
 }
 
 /* Estilos del Main */
 main {
-  padding: 1rem;
-  background-color: lightblue;
+  padding: 20px;
+  background-color: #987d1d;
 }
 
 aside {
@@ -41,7 +53,7 @@ aside {
   display: block;
   float: right;
   margin-left: 20px;
-  background-color: bisque;
+  background-color: #20dad9;
 }
 
 article {
@@ -50,15 +62,15 @@ article {
 }
 
 #seccionUno {
-  background-color: coral;
+  background-color: #43dec1;
 }
 
 #seccionDos {
-  background-color: deeppink;
+  background-color: #43dec2;
 }
 
 #seccionTres {
-  background-color: gray;
+  background-color: #43dec3;
 }
 
 aside p,
@@ -76,8 +88,7 @@ footer {
   height: 10vh;
   width: 100vw;
   text-align: center;
-  margin-top: 20px;
   padding-top: 5vh;
-  background-color: blueviolet;
-  color: white;
+  background-color: #7f3007;
+  color: #ffffff;
 }
