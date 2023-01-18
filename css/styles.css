@@ -1,35 +1,30 @@
-/* Eliminamos margenes */
-* {
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
   margin: 0;
 }
 
-.color1 {
-  color: #20dad9;
-}
-.color2 {
-  color: #43dec3;
-}
-.color3 {
-  color: #5c0907;
-}
-.color4 {
-  color: #7f3007;
-}
-.color5 {
-  color: #987d1d;
+/* Estilos del Header */
+header {
+  width: 100vw;
+  padding: 3vh 0;
+  background-color: #5c0907;
 }
 
-/* Estilos del Header */
 nav {
-  height: 6vh;
-  width: 100vw;
-  background-color: #5c0907;
-  padding-top: 3vh;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ul {
   list-style-type: none;
-  text-align: center;
 }
 
 li {
@@ -38,35 +33,38 @@ li {
 
 li a {
   color: #ffffff;
+  padding-left: 0.8rem;
   text-decoration: none;
-  padding: 0 0.8rem;
+  text-transform: uppercase;
 }
 
 /* Estilos del Main */
 main {
-  padding: 20px;
+  width: 100vw;
+  padding: 20px 5vw;
   background-color: #987d1d;
 }
 
 aside {
   width: 25vw;
-  display: block;
-  float: right;
+  margin-bottom: 20px;
   margin-left: 20px;
+  float: right;
   background-color: #20dad9;
 }
 
 article {
   width: 50vw;
-  margin-bottom: 20px;
 }
 
 #seccionUno {
-  background-color: #43dec1;
+  margin-bottom: 20px;
+  background-color: #41dec1;
 }
 
 #seccionDos {
-  background-color: #43dec2;
+  margin-bottom: 20px;
+  background-color: #42dec2;
 }
 
 #seccionTres {
@@ -80,15 +78,17 @@ section p {
 
 h1 {
   text-align: center;
+  margin: auto;
   padding-top: 1rem;
 }
 
 /* Estilos del Footer */
 footer {
-  height: 10vh;
+  height: 15vh;
   width: 100vw;
-  text-align: center;
-  padding-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #7f3007;
   color: #ffffff;
 }
