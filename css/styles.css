@@ -15,7 +15,8 @@ html {
 
 /* Estilos del Header */
 header {
-  width: 100vw;
+  /* Se ha tenido que introducir este valor de anchura para evitar que se desplace contenido a la derecha introduciendo un scroll lateral */
+  width: 99.3vw;
   padding: 3vh 0;
   background-color: #780000;
 }
@@ -40,7 +41,8 @@ li a {
   font-family: 'Martel', serif;
   color: #ffffff;
   font-weight: bold;
-  padding-left: 0.8rem;
+  font-size: 1.2rem;
+  margin-left: 3rem;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -52,7 +54,7 @@ li a:hover {
 
 /* Estilos del Main */
 main {
-  width: 100vw;
+  width: 99.3vw;
   padding: 20px 5vw;
   background-color: #fdf0d5;
 }
@@ -70,43 +72,59 @@ article {
   width: 50vw;
 }
 
-#seccionUno {
+#articulo1 {
   margin-bottom: 20px;
   background-color: #669bbb;
   border-radius: 5px;
 }
 
-#seccionDos {
+#articulo2 {
   margin-bottom: 20px;
   background-color: #669bbc;
   border-radius: 5px;
 }
 
-#seccionTres {
+#articulo3 {
   background-color: #669bbd;
   border-radius: 5px;
 }
 
-aside p,
-section p {
-  padding: 1rem;
-}
-
-h1 {
+.encabezado {
   text-align: center;
   margin: auto;
-  padding-top: 1rem;
+  font-size: 2.1rem;
+  padding-top: 2rem;
   font-family: 'Martel', serif;
+}
+
+.encabezadoSecundario {
+  text-align: center;
+  margin: auto;
+  font-size: 1.5rem;
+  font-family: 'Martel', serif;
+}
+
+.texto {
+  font-size: 1.15rem;
+  padding: 2rem;
+}
+
+.texto.inicial {
+  text-indent: 40px;
+}
+
+.texto.lateral {
+  font-style: italic;
 }
 
 /* Estilos del Footer */
 footer {
   height: 15vh;
-  width: 100vw;
+  width: 99.3vw;
   max-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #c1121f;
+  background-color: #780001;
   color: #ffffff;
 }
