@@ -1,6 +1,10 @@
+/* Importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Martel&family=Nunito&display=swap');
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 *,
 *:before,
@@ -13,11 +17,12 @@ html {
 header {
   width: 100vw;
   padding: 3vh 0;
-  background-color: #5c0907;
+  background-color: #780000;
 }
 
 nav {
   height: 10vh;
+  max-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,17 +37,24 @@ li {
 }
 
 li a {
+  font-family: 'Martel', serif;
   color: #ffffff;
+  font-weight: bold;
   padding-left: 0.8rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+li a:hover {
+  color: #fdf0d5;
+  text-decoration: line-through;
 }
 
 /* Estilos del Main */
 main {
   width: 100vw;
   padding: 20px 5vw;
-  background-color: #987d1d;
+  background-color: #fdf0d5;
 }
 
 aside {
@@ -50,7 +62,8 @@ aside {
   margin-bottom: 20px;
   margin-left: 20px;
   float: right;
-  background-color: #20dad9;
+  background-color: #669bba;
+  border-radius: 5px;
 }
 
 article {
@@ -59,16 +72,19 @@ article {
 
 #seccionUno {
   margin-bottom: 20px;
-  background-color: #41dec1;
+  background-color: #669bbb;
+  border-radius: 5px;
 }
 
 #seccionDos {
   margin-bottom: 20px;
-  background-color: #42dec2;
+  background-color: #669bbc;
+  border-radius: 5px;
 }
 
 #seccionTres {
-  background-color: #43dec3;
+  background-color: #669bbd;
+  border-radius: 5px;
 }
 
 aside p,
@@ -80,15 +96,17 @@ h1 {
   text-align: center;
   margin: auto;
   padding-top: 1rem;
+  font-family: 'Martel', serif;
 }
 
 /* Estilos del Footer */
 footer {
   height: 15vh;
   width: 100vw;
+  max-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #7f3007;
+  background-color: #c1121f;
   color: #ffffff;
 }
